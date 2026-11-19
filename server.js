@@ -27,11 +27,13 @@ app.get('/api/generar-trivia', async (req, res) => {
         Eres el motor backend de una aplicación de trivias. 
         Genera exactamente 10 preguntas de opción múltiple sobre el tema "${tema}" con un nivel de dificultad "${dificultad}".
         Devuelve el resultado ESTRICTAMENTE como un arreglo JSON. 
-        Estructura requerida para cada pregunta:
+       
+          Estructura requerida para cada pregunta:
         {
           "pregunta": "Texto de la pregunta",
           "opciones": ["Opción 1", "Opción 2", "Opción 3", "Opción 4"],
-          "respuesta_correcta": "Texto exacto de la opción correcta"
+          "respuesta_correcta": "Texto exacto de la opción correcta",
+          "explicacion": "Un párrafo breve (1 o 2 oraciones) con datos extra o contexto que refuerce por qué esa es la respuesta correcta."
         }
         `;
 
